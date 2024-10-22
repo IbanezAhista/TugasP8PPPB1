@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TarikTunaiFragment"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/txtTarikTunai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:textSize="16sp"
+        android:fontFamily="@font/poppins_semibold"
+        android:text="Tarik Tunai" />
+
+    <EditText
+        android:id="@+id/edtNominal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:hint="Jumlah Nominal"
+        android:fontFamily="@font/poppins_regular"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/edtPin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="8dp"
+        android:autofillHints="no"
+        android:hint="PIN"
+        android:fontFamily="@font/poppins_regular"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/btnTarik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_bold"
+        android:backgroundTint="#fc7b03"
+        android:text="Tarik" />
+
+</LinearLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bottom_navigation"
+    app:startDestination="@id/berandaFragment">
+
+    <fragment
+        android:id="@+id/berandaFragment"
+        android:name="ibanez.pppb1.tugasp8pppb1.BerandaFragment"
+        android:label="fragment_beranda"
+        tools:layout="@layout/fragment_beranda" >
+        <action
+            android:id="@+id/action_berandaFragment_to_tarikTunaiFragment"
+            app:destination="@id/tarikTunaiFragment" />
+        <action
+            android:id="@+id/action_berandaFragment_to_setorTunaiFragment2"
+            app:destination="@id/setorTunaiFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/inboxFragment"
+        android:name="ibanez.pppb1.tugasp8pppb1.InboxFragment"
+        android:label="fragment_inbox"
+        tools:layout="@layout/fragment_inbox" />
+    <fragment
+        android:id="@+id/mutasiFragment"
+        android:name="ibanez.pppb1.tugasp8pppb1.MutasiFragment"
+        android:label="fragment_mutasi"
+        tools:layout="@layout/fragment_mutasi" />
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="ibanez.pppb1.tugasp8pppb1.ProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/tarikTunaiFragment"
+        android:name="ibanez.pppb1.tugasp8pppb1.TarikTunaiFragment"
+        android:label="fragment_tarik_tunai"
+        tools:layout="@layout/fragment_tarik_tunai" />
+    <fragment
+        android:id="@+id/setorTunaiFragment2"
+        android:name="ibanez.pppb1.tugasp8pppb1.SetorTunaiFragment"
+        android:label="fragment_setor_tunai"
+        tools:layout="@layout/fragment_setor_tunai" />
+</navigation>
